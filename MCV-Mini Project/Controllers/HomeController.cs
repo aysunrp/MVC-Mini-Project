@@ -1,12 +1,45 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MCV_Mini_Project.Services.Interface;
+using MCV_Mini_Project.ViewModels;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MCV_Mini_Project.Controllers
 {
     public class HomeController : Controller
     {
-        public IActionResult Index()
+        private readonly IIconService _iconService;
+        private readonly ISliderService _sliderService;
+        private readonly IEventService _eventService;
+        private readonly INewsService _newsService;
+        private readonly IVideoService _videoService;
+        public HomeController(IIconService iconService,
+                              ISliderService sliderService,
+                              IEventService eventService,
+                              INewsService newsService,
+                              IVideoService videoService)
         {
-            return View();
+            _iconService = iconService;
+            _sliderService = sliderService;
+            _eventService = eventService;
+            _newsService = newsService;
+            _videoService = videoService;
+        }
+        public async Task<IActionResult> Index()
+        {
+            var icons = await _iconService.GetIconUIVMAsync();
+            var sliders = await _sliderService.GetSliderUIVMAsync();
+            var events = await _eventService.GetEventUIVMAsync();
+            var news = await _newsService.GetNewsUIVMAsync();
+      
+            var videos = await _videoService.GettAllUIAsync();
+
+            return View(new HomeVM
+            {
+                Icons = icons,
+                Sliders = sliders,
+                Events = events,
+                News = news,
+                Video = videos
+            });
         }
     }
 }
