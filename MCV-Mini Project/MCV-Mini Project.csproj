@@ -12,7 +12,6 @@
     <Folder Include="Areas\Admin\Views\" />
     <Folder Include="Migrations\" />
     <Folder Include="Helpers\" />
-    <Folder Include="ViewComponents\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

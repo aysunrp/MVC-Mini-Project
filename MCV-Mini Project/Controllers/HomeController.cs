@@ -11,17 +11,21 @@ namespace MCV_Mini_Project.Controllers
         private readonly IEventService _eventService;
         private readonly INewsService _newsService;
         private readonly IVideoService _videoService;
+        private readonly ISettingService _settingService;
+
         public HomeController(IIconService iconService,
                               ISliderService sliderService,
                               IEventService eventService,
                               INewsService newsService,
-                              IVideoService videoService)
+                              IVideoService videoService,
+                              ISettingService settingService)
         {
             _iconService = iconService;
             _sliderService = sliderService;
             _eventService = eventService;
             _newsService = newsService;
             _videoService = videoService;
+            _settingService = settingService;
         }
         public async Task<IActionResult> Index()
         {
@@ -29,8 +33,8 @@ namespace MCV_Mini_Project.Controllers
             var sliders = await _sliderService.GetSliderUIVMAsync();
             var events = await _eventService.GetEventUIVMAsync();
             var news = await _newsService.GetNewsUIVMAsync();
-      
             var videos = await _videoService.GettAllUIAsync();
+            var setting = await _settingService.GetAllUIAsync();
 
             return View(new HomeVM
             {
@@ -38,7 +42,8 @@ namespace MCV_Mini_Project.Controllers
                 Sliders = sliders,
                 Events = events,
                 News = news,
-                Video = videos
+                Video = videos,
+                Settings=setting
             });
         }
     }
