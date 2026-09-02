@@ -3,61 +3,94 @@
   "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\courses\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\sliderviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\sliderviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\coursepageviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\coursepageviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\shared\\components\\coursepage\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\shared\\components\\coursepage\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\coursepageheroviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\coursepageheroviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\shared\\components\\coursepagehero\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\shared\\components\\coursepagehero\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\services\\courseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\services\\iconservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\services\\iconservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\services\\interface\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\services\\interface\\icourseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.CourseImages.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.CourseInfos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\aboutpageheroviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\aboutpageheroviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\aboutplatformandvisionviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\aboutplatformandvisionviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.Settings.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\coursepageheroviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\coursepageheroviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\footerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\footerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\viewcomponents\\headerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\viewcomponents\\headerviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\controllers\\coursescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\controllers\\aboutcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\services\\visionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\services\\visionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\services\\platformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\services\\platformservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\about\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\shared\\components\\header\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\shared\\components\\icon\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\shared\\components\\icon\\default.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\wwwroot\\styles\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\wwwroot\\styles\\responsive.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|c:\\users\\hp\\desktop\\mvc-mini project\\mcv-mini project\\mcv-mini project\\wwwroot\\styles\\main_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A7BF2E68-0E76-1CF4-3149-086466B52B4F}|MCV-Mini Project\\MCV-Mini Project.csproj|solutionrelative:mcv-mini project\\wwwroot\\styles\\main_styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.AboutVisions.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.AboutPlatforms.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,50 +100,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\CoursePage\\Default.cshtml",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Shared\\Components\\CoursePage\\Default.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\CoursePage\\Default.cshtml",
-              "RelativeToolTip": "MCV-Mini Project\\Views\\Shared\\Components\\CoursePage\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T20:40:07.449Z",
+              "DocumentIndex": 0,
+              "Title": "SliderViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\SliderViewComponent.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\ViewComponents\\SliderViewComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\SliderViewComponent.cs",
+              "RelativeToolTip": "MCV-Mini Project\\ViewComponents\\SliderViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T21:23:59.488Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "CoursePageViewComponent.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\CoursePageViewComponent.cs",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\ViewComponents\\CoursePageViewComponent.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\CoursePageViewComponent.cs",
-              "RelativeToolTip": "MCV-Mini Project\\ViewComponents\\CoursePageViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Title": "IconService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\IconService.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Services\\IconService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\IconService.cs",
+              "RelativeToolTip": "MCV-Mini Project\\Services\\IconService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T20:37:49.644Z",
+              "WhenOpened": "2026-09-02T21:23:30.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\CoursePageHero\\Default.cshtml",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Shared\\Components\\CoursePageHero\\Default.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\CoursePageHero\\Default.cshtml",
-              "RelativeToolTip": "MCV-Mini Project\\Views\\Shared\\Components\\CoursePageHero\\Default.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T20:36:32.746Z",
+              "DocumentIndex": 2,
+              "Title": "ICourseService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
+              "RelativeToolTip": "MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T21:23:27.649Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
+              "Title": "FooterViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\FooterViewComponent.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\ViewComponents\\FooterViewComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\FooterViewComponent.cs",
+              "RelativeToolTip": "MCV-Mini Project\\ViewComponents\\FooterViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T20:42:15.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "CoursePageHeroViewComponent.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\CoursePageHeroViewComponent.cs",
               "RelativeDocumentMoniker": "MCV-Mini Project\\ViewComponents\\CoursePageHeroViewComponent.cs",
@@ -118,141 +164,235 @@
               "RelativeToolTip": "MCV-Mini Project\\ViewComponents\\CoursePageHeroViewComponent.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T20:35:26.762Z",
+              "WhenOpened": "2026-09-02T20:44:04.68Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Courses\\Index.cshtml",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Courses\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Courses\\Index.cshtml",
-              "RelativeToolTip": "MCV-Mini Project\\Views\\Courses\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T19:15:17.901Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CoursesController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\CoursesController.cs",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Controllers\\CoursesController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\CoursesController.cs",
-              "RelativeToolTip": "MCV-Mini Project\\Controllers\\CoursesController.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAqwB4AAAABAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AboutPlatformAndVisionViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\AboutPlatformAndVisionViewComponent.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\ViewComponents\\AboutPlatformAndVisionViewComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\AboutPlatformAndVisionViewComponent.cs",
+              "RelativeToolTip": "MCV-Mini Project\\ViewComponents\\AboutPlatformAndVisionViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T19:14:23.776Z",
+              "WhenOpened": "2026-09-02T20:49:25.889Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Default.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "RelativeToolTip": "MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAFcAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T19:54:56.794Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MCV-Mini Project\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T20:15:13.204Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "dbo.CourseImages [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.CourseImages.sql",
-              "ToolTip": "dbo.CourseImages [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-01T19:21:46.63Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ICourseService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
-              "RelativeToolTip": "MCV-Mini Project\\Services\\Interface\\ICourseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "AboutPageHeroViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\AboutPageHeroViewComponent.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\ViewComponents\\AboutPageHeroViewComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\AboutPageHeroViewComponent.cs",
+              "RelativeToolTip": "MCV-Mini Project\\ViewComponents\\AboutPageHeroViewComponent.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T19:11:31.001Z",
+              "WhenOpened": "2026-09-02T20:41:25.738Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CourseService.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\CourseService.cs",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Services\\CourseService.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\CourseService.cs",
-              "RelativeToolTip": "MCV-Mini Project\\Services\\CourseService.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwDcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T19:11:50.863Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Program.cs",
               "RelativeDocumentMoniker": "MCV-Mini Project\\Program.cs",
               "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Program.cs",
               "RelativeToolTip": "MCV-Mini Project\\Program.cs",
-              "ViewState": "AgIAAAIAAAAAAAAAAAAAwBIAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-09-01T19:13:39.346Z",
+              "WhenOpened": "2026-09-02T19:16:37.215Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "HeaderViewComponent.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\HeaderViewComponent.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\ViewComponents\\HeaderViewComponent.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\ViewComponents\\HeaderViewComponent.cs",
+              "RelativeToolTip": "MCV-Mini Project\\ViewComponents\\HeaderViewComponent.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T20:42:28.989Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CoursesController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\CoursesController.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Controllers\\CoursesController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\CoursesController.cs",
+              "RelativeToolTip": "MCV-Mini Project\\Controllers\\CoursesController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T21:15:11.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MCV-Mini Project\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T21:10:14.909Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AboutController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\AboutController.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Controllers\\AboutController.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Controllers\\AboutController.cs",
+              "RelativeToolTip": "MCV-Mini Project\\Controllers\\AboutController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T21:05:25.728Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "dbo.CourseInfos [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.CourseInfos.sql",
-              "ToolTip": "dbo.CourseInfos [Data]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-01T19:22:47.153Z",
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MCV-Mini Project\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-02T19:47:37.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "MCV-Mini Project\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\About\\Index.cshtml",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\About\\Index.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\About\\Index.cshtml",
+              "RelativeToolTip": "MCV-Mini Project\\Views\\About\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-09-01T19:15:50.21Z",
+              "WhenOpened": "2026-09-02T19:27:18.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "dbo.Settings [Data]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.Settings.sql",
-              "ToolTip": "dbo.Settings [Data]",
+              "Title": "PlatformService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\PlatformService.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Services\\PlatformService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\PlatformService.cs",
+              "RelativeToolTip": "MCV-Mini Project\\Services\\PlatformService.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAUwAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T19:37:49.146Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "VisionService.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\VisionService.cs",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Services\\VisionService.cs",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Services\\VisionService.cs",
+              "RelativeToolTip": "MCV-Mini Project\\Services\\VisionService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAUwAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-02T19:18:55.663Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "RelativeToolTip": "MCV-Mini Project\\Views\\Shared\\Components\\Header\\Default.cshtml",
+              "ViewState": "AgIAAHYAAAAAAAAAAAAmwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-02T19:54:59.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Default.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\Icon\\Default.cshtml",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Shared\\Components\\Icon\\Default.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\Components\\Icon\\Default.cshtml",
+              "RelativeToolTip": "MCV-Mini Project\\Views\\Shared\\Components\\Icon\\Default.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACMAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-02T19:52:04.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MCV-Mini Project\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-09-02T19:40:27.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "responsive.css",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\wwwroot\\styles\\responsive.css",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\wwwroot\\styles\\responsive.css",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\wwwroot\\styles\\responsive.css",
+              "RelativeToolTip": "MCV-Mini Project\\wwwroot\\styles\\responsive.css",
+              "ViewState": "AgIAAAcCAAAAAAAAAAAmwDECAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-02T19:35:13.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "main_styles.css",
+              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\wwwroot\\styles\\main_styles.css",
+              "RelativeDocumentMoniker": "MCV-Mini Project\\wwwroot\\styles\\main_styles.css",
+              "ToolTip": "C:\\Users\\HP\\Desktop\\MVC-Mini Project\\MCV-Mini Project\\MCV-Mini Project\\wwwroot\\styles\\main_styles.css",
+              "RelativeToolTip": "MCV-Mini Project\\wwwroot\\styles\\main_styles.css",
+              "ViewState": "AgIAAHICAAAAAAAAAAAWwIcCAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-09-02T19:31:10.14Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "dbo.AboutVisions [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.AboutVisions.sql",
+              "ToolTip": "dbo.AboutVisions [Data]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2026-09-01T18:32:52.54Z",
+              "WhenOpened": "2026-09-02T19:23:38.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "dbo.AboutPlatforms [Data]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/._SQLEXPRESS/CourseSalesDb/True/SqlTable/dbo.AboutPlatforms.sql",
+              "ToolTip": "dbo.AboutPlatforms [Data]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2026-09-02T19:21:34.841Z",
               "EditorCaption": ""
             }
           ]

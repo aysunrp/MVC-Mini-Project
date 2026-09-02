@@ -17,6 +17,9 @@ builder.Services.AddScoped<IEventService, EventService>();
 builder.Services.AddScoped<INewsService, NewsService>();
 builder.Services.AddScoped<IVideoService, VideoService>();
 builder.Services.AddScoped<ICourseService, CourseService>();
+builder.Services.AddScoped<IPlatformService, PlatformService>();
+builder.Services.AddScoped<IVisionService, VisionService>();
+builder.Services.AddScoped<ITeacherService, TeacherService>();
 
 builder.Services.AddControllersWithViews();
 

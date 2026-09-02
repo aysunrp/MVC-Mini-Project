@@ -1,12 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using MCV_Mini_Project.Services.Interface;
+using Microsoft.AspNetCore.Mvc;
+using MVC_MiniProject.ViewModels.Setting;
 
-namespace MCV_Mini_Project.ViewComponents
+namespace MVC_MiniProject.ViewComponents
 {
     public class JoinViewComponent : ViewComponent
     {
-        public IViewComponentResult Invoke()
+        private readonly ISettingService _settingService;
+        public JoinViewComponent(ISettingService settingService)
         {
-            return View();
+            _settingService = settingService;
+        }
+        public async Task<IViewComponentResult> InvokeAsync()
+        {
+            var settings = await _settingService.GetAllUIAsync();
+            return View(new SettingUIVM
+            {
+                Settings = settings
+            });
         }
     }
 }

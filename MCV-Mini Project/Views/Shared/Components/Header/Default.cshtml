@@ -1,4 +1,5 @@
 ﻿@model Dictionary<string, string>
+
 <header class="header">
 
     <div class="top_bar">
@@ -8,14 +9,23 @@
                     <div class="col">
                         <div class="top_bar_content d-flex flex-row align-items-center justify-content-start">
                             <ul class="top_bar_contact_list">
-                                <li><div class="question">Have any questions?</div></li>
+                                <li>
+                                    <div class="question">Have any questions?</div>
+                                </li>
                                 <li>
                                     <div>@Model["Phone"]</div>
                                 </li>
                                 <li>
-                                    <div><a href="~/https://preview.colorlib.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="0960676f66496c65686c7b677d6c647965687d6c276a6664">@Model["Email"]</a></div>
+                                    <div>
+                                        <a href="~/https://preview.colorlib.com/cdn-cgi/l/email-protectioan"
+                                           class="__cf_email__"
+                                           data-cfemail="0960676f66496c65686c7b677d6c647965687d6c276a6664">
+                                            @Model["Email"]
+                                        </a>
+                                    </div>
                                 </li>
                             </ul>
+
                             <div class="top_bar_login ml-auto">
                                 <ul>
                                     <li><a href="~/#">Register</a></li>
@@ -29,43 +39,78 @@
         </div>
     </div>
 
+
     <div class="header_container">
         <div class="container">
             <div class="row">
                 <div class="col">
+
                     <div class="header_content d-flex flex-row align-items-center justify-content-start">
+
                         <div class="logo_container">
                             <a href="~/#">
                                 <div class="logo_content d-flex flex-row align-items-end justify-content-start">
-                                    <div class="logo_img"><img src="images/@Model["Logo"]" alt=""></div>
-                                    <div class="logo_text">@Model["LogoText"]</div>
+                                    <div class="logo_img">
+                                        <img src="images/@Model["Logo"]" alt="">
+                                    </div>
+
+                                    <div class="logo_text">
+                                        @Model["LogoText"]
+                                    </div>
                                 </div>
                             </a>
                         </div>
+
+
                         <nav class="main_nav_contaner ml-auto">
+
                             <ul class="main_nav">
-                                <li class="active"><a asp-controller="Home" asp-action="Index">home</a></li>
-                                <li><a asp-controller="About" asp-action="Index">about us</a></li>
-                                <li><a asp-controller="Courses" asp-action="Index">courses</a></li>
-                                <li><a href="~/news.html">news</a></li>
-                                <li><a href="~/contact.html">contact</a></li>
+
+                                <li class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")">
+                                    <a asp-controller="Home" asp-action="Index">home</a>
+                                </li>
+
+                                <li class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "About" ? "active" : "")">
+                                    <a asp-controller="About" asp-action="Index">about us</a>
+                                </li>
+
+                                <li class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Courses" ? "active" : "")">
+                                    <a asp-controller="Courses" asp-action="Index">courses</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/news.html">news</a>
+                                </li>
+
+                                <li>
+                                    <a href="~/contact.html">contact</a>
+                                </li>
+
                             </ul>
-                            <div class="search_button"><i class="fa fa-search" aria-hidden="true"></i></div>
+
+
+                            <div class="search_button">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </div>
 
                             <div class="hamburger menu_mm">
                                 <i class="fa fa-bars menu_mm" aria-hidden="true"></i>
                             </div>
+
                         </nav>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+
     <div class="header_search_container">
         <div class="container">
             <div class="row">
                 <div class="col">
+
                     <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
 
                         <form action="/Courses/Search"
@@ -88,8 +133,10 @@
                         </form>
 
                     </div>
+
                 </div>
             </div>
         </div>
     </div>
+
 </header>

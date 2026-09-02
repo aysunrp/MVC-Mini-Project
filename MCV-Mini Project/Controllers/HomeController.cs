@@ -6,45 +6,9 @@ namespace MCV_Mini_Project.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly IIconService _iconService;
-        private readonly ISliderService _sliderService;
-        private readonly IEventService _eventService;
-        private readonly INewsService _newsService;
-        private readonly IVideoService _videoService;
-        private readonly ISettingService _settingService;
-
-        public HomeController(IIconService iconService,
-                              ISliderService sliderService,
-                              IEventService eventService,
-                              INewsService newsService,
-                              IVideoService videoService,
-                              ISettingService settingService)
+        public IActionResult Index()
         {
-            _iconService = iconService;
-            _sliderService = sliderService;
-            _eventService = eventService;
-            _newsService = newsService;
-            _videoService = videoService;
-            _settingService = settingService;
-        }
-        public async Task<IActionResult> Index()
-        {
-            var icons = await _iconService.GetIconUIVMAsync();
-            var sliders = await _sliderService.GetSliderUIVMAsync();
-            var events = await _eventService.GetEventUIVMAsync();
-            var news = await _newsService.GetNewsUIVMAsync();
-            var videos = await _videoService.GettAllUIAsync();
-            var setting = await _settingService.GetAllUIAsync();
-
-            return View(new HomeVM
-            {
-                Icons = icons,
-                Sliders = sliders,
-                Events = events,
-                News = news,
-                Video = videos,
-                Settings=setting
-            });
+            return View();
         }
     }
 }
