@@ -21,11 +21,20 @@ builder.Services.AddScoped<IPlatformService, PlatformService>();
 builder.Services.AddScoped<IVisionService, VisionService>();
 builder.Services.AddScoped<ITeacherService, TeacherService>();
 
+// Admin-specific new services
+builder.Services.AddScoped<IAuthorService, AuthorService>();
+builder.Services.AddScoped<IPositionService, PositionService>();
+builder.Services.AddScoped<ICourseInfoService, CourseInfoService>();
+
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 app.UseStaticFiles();
+
+app.MapControllerRoute(
+    name: "areas",
+    pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}");
 
 app.MapControllerRoute(
     name: "default",

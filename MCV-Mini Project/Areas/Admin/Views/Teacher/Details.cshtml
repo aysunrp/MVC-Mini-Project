@@ -1,0 +1,41 @@
+@model TeacherEditVM
+@{
+    ViewData["Title"] = "Müəllim Detalları";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5><i class="bi bi-eye me-2 text-info"></i>Müəllim — #@Model.Id</h5>
+                <div class="d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-warning">
+                        <i class="bi bi-pencil me-1"></i>Redaktə
+                    </a>
+                    <a asp-action="Index" class="btn btn-sm btn-outline-secondary">
+                        <i class="bi bi-arrow-left me-1"></i>Geri
+                    </a>
+                </div>
+            </div>
+            <div class="p-4">
+                <div class="d-flex align-items-center gap-3 mb-4">
+                    <img src="@FileHelper.GetImageUrl(Model.CurrentImage)" alt="@Model.FullName"
+                         class="rounded-circle object-fit-cover shadow"
+                         style="width:72px;height:72px;"
+                         onerror="this.src='/images/no-image.png'" />
+                    <div>
+                        <div class="fw-bold fs-5">@Model.FullName</div>
+                        <span class="text-muted small">Vəzifə ID: @Model.PositionId</span>
+                    </div>
+                </div>
+                <dl class="row">
+                    <dt class="col-sm-4 text-muted">Şəkil</dt>
+                    <dd class="col-sm-8 text-break">@Model.CurrentImage</dd>
+
+                    <dt class="col-sm-4 text-muted">Vəzifə ID</dt>
+                    <dd class="col-sm-8">@Model.PositionId</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

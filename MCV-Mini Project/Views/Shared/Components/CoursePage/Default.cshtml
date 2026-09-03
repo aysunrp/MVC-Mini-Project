@@ -46,7 +46,7 @@
 
                         <div class="featured_footer d-flex align-items-center justify-content-start">
                             <div class="featured_author_image">
-                                <img src="~/images/@featured.Teacher?.Image" alt="">
+                                <img src="@FileHelper.GetImageUrl(featured.Teacher?.Image)" alt="">
                             </div>
 
                             <div class="featured_author_name">
@@ -76,7 +76,7 @@
                     <div class="course">
 
                         <div class="course_image">
-                            <img src="~/images/@item.CourseImages.FirstOrDefault(x => x.IsMain)?.Name" alt="">
+                            <img src="@FileHelper.GetImageUrl(item.CourseImages.FirstOrDefault(x => x.IsMain)?.Name)" alt="">
                         </div>
 
                         <div class="course_body">
@@ -115,7 +115,7 @@
                             <div class="course_footer d-flex align-items-center justify-content-start">
 
                                 <div class="course_author_image">
-                                    <img src="~/images/@item.Teacher?.Image" alt="">
+                                    <img src="@FileHelper.GetImageUrl(item.Teacher?.Image)" alt="">
                                 </div>
 
                                 <div class="course_author_name">

@@ -1,0 +1,37 @@
+@model IEnumerable<IconListVM>
+@{ ViewData["Title"] = "Icons"; }
+
+<div class="ac">
+    <div class="ac-head">
+        <h5><i class="bi bi-emoji-smile me-2" style="color:#ff8a00"></i>Icons</h5>
+        <a asp-action="Create" class="btn btn-sm btn-orange"><i class="bi bi-plus-lg me-1"></i>Add Icon</a>
+    </div>
+    <div class="table-responsive">
+        <table class="table at mb-0">
+            <thead><tr><th>#</th><th>CSS Class</th><th>Preview</th><th class="text-end">Actions</th></tr></thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr><td colspan="4" class="text-center text-muted py-4">No icons found.</td></tr>
+                }
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-muted small align-middle">@item.Id</td>
+                        <td class="align-middle"><code>@item.Name</code></td>
+                        <td class="align-middle"><i class="@item.Name fs-5"></i></td>
+                        <td class="text-end align-middle">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-secondary me-1"><i class="bi bi-eye"></i></a>
+                            <a asp-action="Edit"    asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning me-1"><i class="bi bi-pencil"></i></a>
+                            <form asp-action="Delete" asp-route-id="@item.Id" method="post" class="d-inline"
+                                  onsubmit="return confirm('Delete this icon?')">
+                                @Html.AntiForgeryToken()
+                                <button class="btn btn-sm btn-outline-danger"><i class="bi bi-trash"></i></button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

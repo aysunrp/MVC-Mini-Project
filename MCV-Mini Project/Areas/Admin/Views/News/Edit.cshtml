@@ -1,0 +1,71 @@
+@model NewsEditVM
+@{
+    ViewData["Title"] = "Xəbər Redaktə";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-7">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5><i class="bi bi-pencil me-2 text-warning"></i>Xəbər Redaktə — #@Model.Id</h5>
+                <a asp-action="Index" class="btn btn-sm btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-1"></i>Geri
+                </a>
+            </div>
+            <div class="p-4">
+                <form asp-action="Edit" method="post" enctype="multipart/form-data">
+                    @Html.AntiForgeryToken()
+                    <input asp-for="Id" type="hidden" />
+
+                    <div class="mb-3">
+                        <label class="form-label fw-semibold">Şəkil</label>
+                        @if (!string.IsNullOrEmpty(Model.CurrentImage))
+                        {
+                            <div class="mb-2">
+                                <img src="@FileHelper.GetImageUrl(Model.CurrentImage)" alt="current"
+                                     style="width:100%;max-height:180px;object-fit:cover;border-radius:8px;border:1px solid #e5e7eb" />
+                            </div>
+                        }
+                        <div class="drop-zone">
+                            <input type="file" asp-for="ImageFile" accept="image/*" />
+                            <i class="bi bi-cloud-arrow-up"></i>
+                            <div class="dz-label">Yeni şəkil üçün <span>seçin</span></div>
+                        </div>
+                        <img class="img-preview mt-2" alt="preview" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Question" class="form-label fw-semibold">Sual / Başlıq</label>
+                        <textarea asp-for="Question" class="form-control" rows="2"></textarea>
+                        <span asp-validation-for="Question" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-3">
+                        <label asp-for="Date" class="form-label fw-semibold">Tarix</label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label asp-for="AuthorId" class="form-label fw-semibold">Müəllif</label>
+                        <select asp-for="AuthorId" asp-items="ViewBag.Authors" class="form-select">
+                            <option value="">— Müəllif seçin —</option>
+                        </select>
+                        <span asp-validation-for="AuthorId" class="text-danger small"></span>
+                    </div>
+
+                    <div class="d-flex gap-2">
+                        <button type="submit" class="btn btn-warning">
+                            <i class="bi bi-check-lg me-1"></i>Yenilə
+                        </button>
+                        <a asp-action="Index" class="btn btn-outline-secondary">Ləğv et</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

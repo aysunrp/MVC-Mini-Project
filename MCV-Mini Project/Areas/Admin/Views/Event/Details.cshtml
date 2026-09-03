@@ -1,0 +1,36 @@
+@model EventEditVM
+@{
+    ViewData["Title"] = "Tədbir Detalları";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5><i class="bi bi-eye me-2 text-info"></i>Tədbir Detalları — #@Model.Id</h5>
+                <div class="d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-warning">
+                        <i class="bi bi-pencil me-1"></i>Redaktə
+                    </a>
+                    <a asp-action="Index" class="btn btn-sm btn-outline-secondary">
+                        <i class="bi bi-arrow-left me-1"></i>Geri
+                    </a>
+                </div>
+            </div>
+            <div class="p-4">
+                <dl class="row">
+                    <dt class="col-sm-4 text-muted">Tarix</dt>
+                    <dd class="col-sm-8">
+                        <span class="badge bg-danger me-1">@Model.DateDay</span>@Model.DateMonth
+                    </dd>
+
+                    <dt class="col-sm-4 text-muted">Başlıq</dt>
+                    <dd class="col-sm-8 fw-semibold">@Model.Title</dd>
+
+                    <dt class="col-sm-4 text-muted">Yer</dt>
+                    <dd class="col-sm-8">@Model.Location</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,62 @@
+@model IEnumerable<EventListVM>
+@{
+    ViewData["Title"] = "Tədbirlər";
+}
+
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h5><i class="bi bi-calendar-event me-2 text-warning"></i>Tədbirlər</h5>
+        <a asp-action="Create" class="btn btn-sm btn-warning">
+            <i class="bi bi-plus-lg me-1"></i>Yeni Tədbir
+        </a>
+    </div>
+    <div class="table-responsive">
+        <table class="table admin-table mb-0">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Tarix</th>
+                    <th>Başlıq</th>
+                    <th>Yer</th>
+                    <th class="text-end">Əməliyyat</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr><td colspan="5" class="text-center text-muted py-4">Heç bir tədbir tapılmadı.</td></tr>
+                }
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="text-muted small">@item.Id</td>
+                        <td>
+                            <span class="badge bg-danger me-1">@item.DateDay</span>
+                            <span class="text-muted small">@item.DateMonth</span>
+                        </td>
+                        <td class="fw-semibold">@item.Title</td>
+                        <td class="text-muted small">@item.Location</td>
+                        <td class="text-end">
+                            <a asp-action="Details" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-outline-info me-1">
+                                <i class="bi bi-eye"></i>
+                            </a>
+                            <a asp-action="Edit" asp-route-id="@item.Id"
+                               class="btn btn-sm btn-outline-warning me-1">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                            <form asp-action="Delete" asp-route-id="@item.Id"
+                                  method="post" class="d-inline"
+                                  onsubmit="return confirm('Bu tədbiri silmək istədiyinizə əminsiniz?')">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-sm btn-outline-danger">
+                                    <i class="bi bi-trash"></i>
+                                </button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

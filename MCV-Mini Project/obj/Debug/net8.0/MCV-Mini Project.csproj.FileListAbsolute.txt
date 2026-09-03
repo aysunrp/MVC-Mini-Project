@@ -137,10 +137,28 @@ C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\swae.build.ex.cache
-C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\MCV-Mini.212B5EF3.Up2Date
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\MCV-Mini Project.dll
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\refint\MCV-Mini Project.dll
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\MCV-Mini Project.pdb
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\MCV-Mini Project.genruntimeconfig.cache
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\ref\MCV-Mini Project.dll
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\appsettings.Development.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\appsettings.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\MCV-Mini Project.staticwebassets.runtime.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\MCV-Mini Project.staticwebassets.endpoints.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\MCV-Mini Project.exe
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\MCV-Mini Project.deps.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\MCV-Mini Project.runtimeconfig.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\MCV-Mini Project.dll
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check\MCV-Mini Project.pdb
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\appsettings.Development.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\appsettings.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.staticwebassets.runtime.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.staticwebassets.endpoints.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.exe
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.deps.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.runtimeconfig.json
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.dll
+C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.pdb
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

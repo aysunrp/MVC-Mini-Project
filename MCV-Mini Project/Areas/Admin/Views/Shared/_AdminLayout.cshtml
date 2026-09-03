@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Admin — @ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800" rel="stylesheet" />
+    <style>
+        :root {
+            --orange:       #ff8a00;
+            --orange-dark:  #ff6600;
+            --orange-gold:  #ffae00;
+            --orange-soft:  #ffa07f;
+            --orange-tint:  #fff4e8;
+            --sidebar-bg:   #2c2b31;
+            --ink:          #2c2b31;
+            --heading:      #44425a;
+            --muted:        #6c6a74;
+            --muted-2:      #918ea0;
+            --page-bg:      #f2f1f8;
+            --line:         #e8e6f0;
+            --sidebar-w:    255px;
+            --topbar-h:     60px;
+        }
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            margin: 0; background: var(--page-bg);
+            font-family: 'Montserrat', sans-serif;
+            color: var(--ink);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* ── Sidebar ── */
+        #sidebar {
+            position: fixed; inset: 0 auto 0 0;
+            width: var(--sidebar-w); background: var(--sidebar-bg);
+            overflow-y: auto; z-index: 1000;
+            display: flex; flex-direction: column;
+        }
+        .sb-brand {
+            height: var(--topbar-h);
+            background: var(--orange);
+            display: flex; align-items: center; justify-content: center; gap: .5rem;
+            font-weight: 800; font-size: 1.15rem; color: #fff;
+            text-decoration: none; letter-spacing: .8px;
+            text-transform: uppercase; flex-shrink: 0;
+        }
+        .sb-brand i { font-size: 1.35rem; color: #fff; }
+        .sb-section {
+            font-size: .65rem; font-weight: 700; letter-spacing: 1.2px;
+            text-transform: uppercase; color: var(--muted-2);
+            padding: 1rem 1.1rem .3rem;
+        }
+        .sb-link {
+            display: flex; align-items: center; gap: .6rem;
+            padding: .52rem 1.1rem; margin: 1px .6rem;
+            border-radius: 7px; color: #c9c7d4;
+            text-decoration: none; font-size: .84rem; font-weight: 500;
+            transition: background .2s, color .2s;
+        }
+        .sb-link i { width: 18px; text-align: center; font-size: .95rem; flex-shrink: 0; }
+        .sb-link:hover  { background: rgba(255,138,0,.16); color: var(--orange); }
+        .sb-link.active { background: var(--orange); color: #fff; }
+
+        /* ── Main ── */
+        #main { margin-left: var(--sidebar-w); min-height: 100vh; display: flex; flex-direction: column; }
+
+        /* ── Topbar ── */
+        #topbar {
+            height: var(--topbar-h); background: #fff;
+            border-bottom: 2px solid var(--orange);
+            display: flex; align-items: center; justify-content: space-between;
+            padding: 0 1.75rem; position: sticky; top: 0; z-index: 900;
+            box-shadow: 0 5px 20px rgba(0,0,0,.05);
+        }
+        #topbar .page-title {
+            font-weight: 700; font-size: 1rem; color: var(--heading);
+            text-transform: uppercase; letter-spacing: .4px;
+        }
+        .btn-site {
+            background: var(--orange); border: none; color: #fff;
+            font-weight: 600; font-size: .75rem; text-transform: uppercase;
+            letter-spacing: .4px; padding: .45rem .9rem;
+        }
+        .btn-site:hover { background: var(--orange-dark); color: #fff; }
+
+        .btn-orange,
+        .btn-primary, .btn-success, .btn-warning {
+            background: var(--orange) !important;
+            border-color: var(--orange) !important;
+            color: #fff !important;
+        }
+        .btn-orange:hover,
+        .btn-primary:hover, .btn-success:hover, .btn-warning:hover {
+            background: var(--orange-dark) !important;
+            border-color: var(--orange-dark) !important;
+            color: #fff !important;
+        }
+        .btn-outline-secondary {
+            color: var(--muted); border-color: #d9d9d9;
+        }
+        .btn-outline-secondary:hover {
+            background: var(--ink); border-color: var(--ink); color: #fff;
+        }
+        .btn-outline-info {
+            color: var(--orange); border-color: var(--orange);
+        }
+        .btn-outline-info:hover {
+            background: var(--orange); border-color: var(--orange); color: #fff;
+        }
+        .btn-outline-warning {
+            color: var(--orange-dark); border-color: var(--orange-dark);
+        }
+        .btn-outline-warning:hover {
+            background: var(--orange-dark); border-color: var(--orange-dark); color: #fff;
+        }
+
+        .text-primary, .text-success, .text-warning, .text-info,
+        .icon-accent { color: var(--orange) !important; }
+        .bg-success, .bg-primary, .bg-warning {
+            background: var(--orange) !important; color: #fff !important;
+        }
+        .bg-success-subtle {
+            background: var(--orange-tint) !important;
+            color: var(--orange-dark) !important;
+            border-color: #ffd8b0 !important;
+        }
+
+        /* ── Content ── */
+        .page-body { padding: 1.5rem 1.75rem; flex: 1; }
+
+        /* ── Card ── */
+        .ac, .admin-card {
+            background: #fff; border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,.05);
+            overflow: hidden;
+        }
+        .ac-head, .admin-card-header {
+            padding: .85rem 1.25rem;
+            border-bottom: 1px solid var(--line);
+            display: flex; align-items: center; justify-content: space-between;
+            background: #fff;
+        }
+        .ac-head h5, .admin-card-header h5 {
+            margin: 0; font-weight: 700; font-size: .92rem; color: var(--heading);
+        }
+
+        /* ── Table ── */
+        .at thead th, .admin-table thead th {
+            background: var(--page-bg); font-size: .72rem; text-transform: uppercase;
+            letter-spacing: .6px; color: var(--muted);
+            border-bottom: 2px solid var(--orange); white-space: nowrap;
+        }
+        .at tbody tr:hover, .admin-table tbody tr:hover { background: var(--orange-tint); }
+
+        /* ── Form ── */
+        .form-label { color: var(--heading); }
+        .form-control:focus, .form-select:focus {
+            border-color: var(--orange); box-shadow: 0 0 0 .2rem rgba(255,138,0,.22);
+        }
+        .form-check-input:checked { background-color: var(--orange); border-color: var(--orange); }
+
+        /* ── Image preview ── */
+        .img-preview {
+            width: 100%; max-height: 200px; object-fit: cover;
+            border-radius: 8px; border: 2px dashed var(--line); display: none;
+        }
+        .img-preview.show { display: block; }
+
+        /* ── File drop zone ── */
+        .drop-zone {
+            border: 2px dashed #d9d9d9; border-radius: 8px;
+            padding: 1.5rem; text-align: center; cursor: pointer;
+            transition: border-color .2s, background .2s;
+        }
+        .drop-zone:hover { border-color: var(--orange); background: var(--orange-tint); }
+        .drop-zone input[type=file] { display: none; }
+        .drop-zone i { font-size: 2rem; color: var(--muted-2); }
+        .drop-zone .dz-label { font-size: .85rem; color: var(--muted); margin-top: .35rem; }
+        .drop-zone .dz-label span { color: var(--orange); font-weight: 600; cursor: pointer; }
+
+        /* ── Stat cards ── */
+        .stat-card {
+            background: #fff; border-radius: 10px; padding: 1.2rem 1.4rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,.05);
+            display: flex; align-items: center; gap: 1rem;
+            border-bottom: 3px solid var(--orange);
+        }
+        .stat-icon {
+            width: 48px; height: 48px; border-radius: 10px;
+            display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+            font-size: 1.4rem;
+        }
+
+        /* ── Alert toast ── */
+        .toast-wrap { position: fixed; top: 1rem; right: 1rem; z-index: 9999; min-width: 280px; }
+
+        @@media (max-width: 768px) {
+            #sidebar { transform: translateX(-100%); }
+            #main { margin-left: 0; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════ SIDEBAR ═══════════ -->
+<nav id="sidebar">
+    <a class="sb-brand" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+        <i class="bi bi-mortarboard-fill"></i> eLEARN
+    </a>
+
+    @{
+        string ctrl = ViewContext.RouteData.Values["controller"]?.ToString() ?? "";
+        string Active(string c) => ctrl == c ? "active" : "";
+    }
+
+    <div style="padding-bottom:1.5rem">
+        <div class="sb-section">Main</div>
+        <a class="sb-link @Active("Dashboard")" asp-area="Admin" asp-controller="Dashboard" asp-action="Index">
+            <i class="bi bi-speedometer2"></i> Dashboard
+        </a>
+
+        <div class="sb-section">Content</div>
+        <a class="sb-link @Active("Slider")"  asp-area="Admin" asp-controller="Slider"  asp-action="Index"><i class="bi bi-images"></i> Sliders</a>
+        <a class="sb-link @Active("Icon")"    asp-area="Admin" asp-controller="Icon"    asp-action="Index"><i class="bi bi-emoji-smile"></i> Icons</a>
+        <a class="sb-link @Active("Video")"   asp-area="Admin" asp-controller="Video"   asp-action="Index"><i class="bi bi-play-circle"></i> Videos</a>
+        <a class="sb-link @Active("Setting")" asp-area="Admin" asp-controller="Setting" asp-action="Index"><i class="bi bi-gear"></i> Settings</a>
+
+        <div class="sb-section">Courses</div>
+        <a class="sb-link @Active("CourseInfo")" asp-area="Admin" asp-controller="CourseInfo" asp-action="Index"><i class="bi bi-book"></i> Courses</a>
+        <a class="sb-link @Active("Teacher")"    asp-area="Admin" asp-controller="Teacher"    asp-action="Index"><i class="bi bi-person-workspace"></i> Teachers</a>
+        <a class="sb-link @Active("Position")"   asp-area="Admin" asp-controller="Position"   asp-action="Index"><i class="bi bi-briefcase"></i> Positions</a>
+
+        <div class="sb-section">News & Events</div>
+        <a class="sb-link @Active("News")"   asp-area="Admin" asp-controller="News"   asp-action="Index"><i class="bi bi-newspaper"></i> News</a>
+        <a class="sb-link @Active("Event")"  asp-area="Admin" asp-controller="Event"  asp-action="Index"><i class="bi bi-calendar-event"></i> Events</a>
+        <a class="sb-link @Active("Author")" asp-area="Admin" asp-controller="Author" asp-action="Index"><i class="bi bi-person-lines-fill"></i> Authors</a>
+
+        <div class="sb-section">About</div>
+        <a class="sb-link @Active("AboutPlatform")" asp-area="Admin" asp-controller="AboutPlatform" asp-action="Index"><i class="bi bi-building"></i> Platform</a>
+        <a class="sb-link @Active("AboutVision")"   asp-area="Admin" asp-controller="AboutVision"   asp-action="Index"><i class="bi bi-eye"></i> Vision</a>
+    </div>
+</nav>
+
+<!-- ═══════════ MAIN ═══════════ -->
+<div id="main">
+    <div id="topbar">
+        <span class="page-title">@(ViewData["Title"] ?? "Admin Panel")</span>
+        <a asp-area="" asp-controller="Home" asp-action="Index"
+           class="btn btn-sm btn-site d-flex align-items-center gap-1">
+            <i class="bi bi-house"></i> Back to Site
+        </a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="toast-wrap">
+            <div class="alert alert-success alert-dismissible fade show shadow-sm mb-0" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i>@TempData["Success"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    }
+    @if (TempData["Error"] != null)
+    {
+        <div class="toast-wrap">
+            <div class="alert alert-danger alert-dismissible fade show shadow-sm mb-0" role="alert">
+                <i class="bi bi-exclamation-triangle-fill me-2"></i>@TempData["Error"]
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            </div>
+        </div>
+    }
+
+    <div class="page-body">
+        @RenderBody()
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    // Universal image preview for any drop-zone
+    document.querySelectorAll('.drop-zone').forEach(zone => {
+        const input = zone.querySelector('input[type=file]');
+        const preview = zone.closest('form')?.querySelector('.img-preview');
+        zone.addEventListener('click', () => input?.click());
+        zone.addEventListener('dragover', e => { e.preventDefault(); zone.style.borderColor = '#ff8a00'; });
+        zone.addEventListener('dragleave', () => zone.style.borderColor = '');
+        zone.addEventListener('drop', e => {
+            e.preventDefault(); zone.style.borderColor = '';
+            if (e.dataTransfer.files[0]) { input.files = e.dataTransfer.files; showPreview(e.dataTransfer.files[0], preview); }
+        });
+        input?.addEventListener('change', () => { if (input.files[0]) showPreview(input.files[0], preview); });
+    });
+    function showPreview(file, el) {
+        if (!el) return;
+        const reader = new FileReader();
+        reader.onload = e => { el.src = e.target.result; el.classList.add('show'); };
+        reader.readAsDataURL(file);
+    }
+</script>
+@await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

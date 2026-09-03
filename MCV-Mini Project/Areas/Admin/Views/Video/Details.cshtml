@@ -1,0 +1,35 @@
+@model VideoEditVM
+@{
+    ViewData["Title"] = "Video Detalları";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5><i class="bi bi-eye me-2 text-info"></i>Video — #@Model.Id</h5>
+                <div class="d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-warning">
+                        <i class="bi bi-pencil me-1"></i>Redaktə
+                    </a>
+                    <a asp-action="Index" class="btn btn-sm btn-outline-secondary">
+                        <i class="bi bi-arrow-left me-1"></i>Geri
+                    </a>
+                </div>
+            </div>
+            <div class="p-4">
+                <dl class="row">
+                    <dt class="col-sm-3 text-muted">URL / Ad</dt>
+                    <dd class="col-sm-9 text-break">@Model.Name</dd>
+                </dl>
+
+                @if (Model.Name != null && (Model.Name.Contains("youtube.com") || Model.Name.Contains("youtu.be")))
+                {
+                    <div class="ratio ratio-16x9 mt-3">
+                        <iframe src="@Model.Name" allowfullscreen></iframe>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</div>

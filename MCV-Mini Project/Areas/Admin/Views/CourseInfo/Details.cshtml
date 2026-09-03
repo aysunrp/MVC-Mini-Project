@@ -1,0 +1,65 @@
+@model CourseInfoEditVM
+@{
+    ViewData["Title"] = "Kurs Detalları";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5><i class="bi bi-eye me-2 text-info"></i>Kurs — #@Model.Id</h5>
+                <div class="d-flex gap-2">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-sm btn-warning">
+                        <i class="bi bi-pencil me-1"></i>Redaktə
+                    </a>
+                    <a asp-action="Index" class="btn btn-sm btn-outline-secondary">
+                        <i class="bi bi-arrow-left me-1"></i>Geri
+                    </a>
+                </div>
+            </div>
+            <div class="p-4">
+                <dl class="row">
+                    <dt class="col-sm-3 text-muted">Şəkil</dt>
+                    <dd class="col-sm-9">
+                        @if (!string.IsNullOrEmpty(Model.CurrentImage))
+                        {
+                            <img src="@FileHelper.GetImageUrl(Model.CurrentImage)" alt="course"
+                                 style="width:100%;max-height:220px;object-fit:cover;border-radius:8px;" />
+                        }
+                    </dd>
+
+                    <dt class="col-sm-3 text-muted">Başlıq</dt>
+                    <dd class="col-sm-9 fw-semibold">@Model.Title</dd>
+
+                    <dt class="col-sm-3 text-muted">Açıqlama</dt>
+                    <dd class="col-sm-9">@Model.Description</dd>
+
+                    <dt class="col-sm-3 text-muted">Qiymət</dt>
+                    <dd class="col-sm-9"><span class="badge bg-success fs-6">@Model.Price ₼</span></dd>
+
+                    <dt class="col-sm-3 text-muted">Satış Sayı</dt>
+                    <dd class="col-sm-9">@Model.SalesCount</dd>
+
+                    <dt class="col-sm-3 text-muted">Müəllim ID</dt>
+                    <dd class="col-sm-9">@Model.TeacherId</dd>
+
+                    <dt class="col-sm-3 text-muted">Statuslar</dt>
+                    <dd class="col-sm-9">
+                        @if (Model.IsFeatured)
+                        {
+                            <span class="badge bg-warning text-dark me-1">Seçilmiş</span>
+                        }
+                        @if (Model.IsNew)
+                        {
+                            <span class="badge bg-primary">Yeni</span>
+                        }
+                        @if (!Model.IsFeatured && !Model.IsNew)
+                        {
+                            <span class="text-muted">—</span>
+                        }
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
