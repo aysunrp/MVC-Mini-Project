@@ -1,0 +1,7 @@
+Email: superadmin@elearn.local
+Şifre: SuperAdmin!123
+
+
+
+Email: admin@elearn.local
+Şifre: Admin!12345
