@@ -45,6 +45,7 @@ $(document).ready(function()
 	});
 
 	initHeaderSearch();
+	initPasswordToggle();
 	initMenu();
 	initHomeSlider();
 	initCoursesSlider();
@@ -87,6 +88,32 @@ $(document).ready(function()
 				}
 			});
 		}
+	}
+
+	function initPasswordToggle()
+	{
+		$(document).on('click', '.password-toggle', function()
+		{
+			var btn = $(this);
+			var input = btn.siblings('input');
+			var icon = btn.find('i');
+			var isHidden = input.attr('type') === 'password';
+
+			if (isHidden)
+			{
+				input.attr('type', 'text');
+				btn.addClass('is-visible');
+				icon.removeClass('fa-eye-slash').addClass('fa-eye');
+				btn.attr('aria-label', 'Hide password');
+			}
+			else
+			{
+				input.attr('type', 'password');
+				btn.removeClass('is-visible');
+				icon.removeClass('fa-eye').addClass('fa-eye-slash');
+				btn.attr('aria-label', 'Show password');
+			}
+		});
 	}
 
 	/* 

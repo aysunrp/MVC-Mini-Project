@@ -1,13 +1,13 @@
 @model IEnumerable<NewsListVM>
 @{
-    ViewData["Title"] = "Xəbərlər";
+    ViewData["Title"] = "News";
 }
 
 <div class="admin-card">
     <div class="admin-card-header">
-        <h5><i class="bi bi-newspaper me-2 text-success"></i>Xəbərlər</h5>
+        <h5><i class="bi bi-newspaper me-2 text-success"></i>News</h5>
         <a asp-action="Create" class="btn btn-sm btn-success">
-            <i class="bi bi-plus-lg me-1"></i>Yeni Xəbər
+            <i class="bi bi-plus-lg me-1"></i>Add News
         </a>
     </div>
     <div class="table-responsive">
@@ -15,11 +15,11 @@
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Şəkil</th>
-                    <th>Sual / Başlıq</th>
-                    <th>Tarix</th>
-                    <th>Müəllif</th>
-                    <th class="text-end">Əməliyyat</th>
+                    <th>Image</th>
+                    <th>Title</th>
+                    <th>Date</th>
+                    <th>Author</th>
+                    <th class="text-end">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -52,18 +52,18 @@
                         <td class="text-end">
                             <a asp-action="Details" asp-route-id="@item.Id"
                                class="btn btn-sm btn-outline-info me-1">
-                                <i class="bi bi-eye"></i>
+                                Detail
                             </a>
                             <a asp-action="Edit" asp-route-id="@item.Id"
                                class="btn btn-sm btn-outline-warning me-1">
-                                <i class="bi bi-pencil"></i>
+                                Edit
                             </a>
                             <form asp-action="Delete" asp-route-id="@item.Id"
                                   method="post" class="d-inline"
                                   onsubmit="return confirm('Bu xəbəri silmək istədiyinizə əminsiniz?')">
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-sm btn-outline-danger">
-                                    <i class="bi bi-trash"></i>
+                                    Delete
                                 </button>
                             </form>
                         </td>

@@ -18,6 +18,7 @@ namespace MCV_Mini_Project.ViewComponents
                 ? await _courseService.GetAllAsync()
                 : await _courseService.SearchAsync(name);
 
+            ViewBag.SearchTerm = name?.Trim();
             return View(courses);
         }
     }

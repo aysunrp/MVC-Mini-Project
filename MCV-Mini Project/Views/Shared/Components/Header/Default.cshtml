@@ -28,8 +28,31 @@
 
                             <div class="top_bar_login ml-auto">
                                 <ul>
-                                    <li><a href="~/#">Register</a></li>
-                                    <li><a href="~/#">Login</a></li>
+                                    @if (User.Identity?.IsAuthenticated == true)
+                                    {
+                                        <li>
+                                            <a asp-area="" asp-controller="Account" asp-action="Profile">
+                                                @(User.FindFirst(System.Security.Claims.ClaimTypes.GivenName)?.Value ?? User.Identity.Name)
+                                            </a>
+                                        </li>
+                                        @if (User.IsInRole("SuperAdmin") || User.IsInRole("Admin"))
+                                        {
+                                            <li>
+                                                <a asp-area="Admin" asp-controller="Dashboard" asp-action="Index">Admin</a>
+                                            </li>
+                                        }
+                                        <li>
+                                            <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                                                @Html.AntiForgeryToken()
+                                                <button type="submit" class="auth-link-btn">Logout</button>
+                                            </form>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <li><a asp-area="" asp-controller="Account" asp-action="Register">Register</a></li>
+                                        <li><a asp-area="" asp-controller="Account" asp-action="Login">Login</a></li>
+                                    }
                                 </ul>
                             </div>
                         </div>
@@ -113,15 +136,15 @@
 
                     <div class="header_search_content d-flex flex-row align-items-center justify-content-end">
 
-                        <form action="/Courses/Search"
-                              method="get"
+                        <form asp-area="" asp-controller="Courses" asp-action="Search" method="get"
                               class="header_search_form">
 
                             <input type="search"
                                    name="name"
                                    class="search_input"
-                                   placeholder="Search"
-                                   required="required">
+                                   placeholder="Search courses"
+                                   value="@Context.Request.Query["name"]"
+                                   required>
 
                             <button type="submit"
                                     class="header_search_button d-flex flex-column align-items-center justify-content-center">

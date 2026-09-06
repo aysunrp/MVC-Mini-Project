@@ -2,10 +2,13 @@ using MCV_Mini_Project.Areas.Admin.ViewModels.CourseInfo;
 using MCV_Mini_Project.Services.Interface;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
+using MCV_Mini_Project.Constants;
+using Microsoft.AspNetCore.Authorization;
 
 namespace MCV_Mini_Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Policy = Policies.AdminPanel)]
     public class CourseInfoController : Controller
     {
         private readonly ICourseInfoService _courseInfoService;

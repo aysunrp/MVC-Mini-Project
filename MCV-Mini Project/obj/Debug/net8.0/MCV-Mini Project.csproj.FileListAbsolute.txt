@@ -161,4 +161,41 @@ C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.deps.json
 C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.runtimeconfig.json
 C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.dll
 C:\Users\HP\AppData\Local\Temp\mvc-mini-build-check2\MCV-Mini Project.pdb
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\appsettings.Development.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\appsettings.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\MCV-Mini Project.staticwebassets.runtime.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\MCV-Mini Project.staticwebassets.endpoints.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\MCV-Mini Project.exe
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\MCV-Mini Project.deps.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\MCV-Mini Project.runtimeconfig.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\MCV-Mini Project.dll
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build\MCV-Mini Project.pdb
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\appsettings.Development.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\appsettings.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\MCV-Mini Project.staticwebassets.runtime.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\MCV-Mini Project.staticwebassets.endpoints.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\MCV-Mini Project.exe
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\MCV-Mini Project.deps.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\MCV-Mini Project.runtimeconfig.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\MCV-Mini Project.dll
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build2\MCV-Mini Project.pdb
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\appsettings.Development.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\appsettings.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\MCV-Mini Project.staticwebassets.runtime.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\MCV-Mini Project.staticwebassets.endpoints.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\MCV-Mini Project.exe
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\MCV-Mini Project.deps.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\MCV-Mini Project.runtimeconfig.json
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\MCV-Mini Project.dll
+C:\Users\HP\AppData\Local\Temp\mvc-auth-build3\MCV-Mini Project.pdb
 C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\MailKit.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\MimeKit.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+C:\Users\HP\Desktop\MVC-Mini Project\MCV-Mini Project\MCV-Mini Project\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll

@@ -1,0 +1,46 @@
+@model ResendConfirmationVM
+@{
+    ViewData["Title"] = "Resend confirmation";
+}
+
+<div class="auth-page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-7">
+                <div class="auth-card">
+                    <h2>Resend confirmation</h2>
+                    <p class="auth-lead">Enter your email and we will send a new confirmation link. Previous unused links will stop working.</p>
+
+                    @if (TempData["Success"] != null)
+                    {
+                        <div class="alert alert-success">@TempData["Success"]</div>
+                    }
+                    @if (TempData["Error"] != null)
+                    {
+                        <div class="alert alert-danger">@TempData["Error"]</div>
+                    }
+                    @if (TempData["DevConfirmLink"] != null)
+                    {
+                        <div class="alert alert-warning small">
+                            SMTP is not configured. Development confirmation link:
+                            <br />
+                            <a href="@TempData["DevConfirmLink"]">Confirm email</a>
+                        </div>
+                    }
+
+                    <form asp-action="ResendConfirmation" method="post">
+                        @Html.AntiForgeryToken()
+                        <div class="form-group mb-4">
+                            <label asp-for="Email"></label>
+                            <input asp-for="Email" class="form-control" />
+                            <span asp-validation-for="Email" class="text-danger small"></span>
+                        </div>
+                        <button type="submit" class="auth-btn">Send link</button>
+                    </form>
+
+                    <p class="auth-switch"><a asp-action="Login">Back to login</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

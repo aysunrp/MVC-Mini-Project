@@ -131,6 +131,25 @@
 	{
 		height: 354px;
 	}
+	.featured_col .course-image-link
+	{
+		min-height: 354px;
+		height: 354px;
+	}
+	.featured_col .course-image-link .featured_background
+	{
+		min-height: 354px;
+		height: 354px;
+	}
+	.course-image-link,
+	.course-image-link .featured_background
+	{
+		min-height: 354px;
+	}
+	.course_image .course-image-link
+	{
+		min-height: 0;
+	}
 	.footer_col:not(:last-child)
 	{
 		margin-bottom: 80px;

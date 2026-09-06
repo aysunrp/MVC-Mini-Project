@@ -1,9 +1,10 @@
 ﻿using MCV_Mini_Project.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace MCV_Mini_Project.Data
 {
-    public class AppDbContext : DbContext
+    public class AppDbContext : IdentityDbContext<AppUser>
     {
         public DbSet<Icon> Icons { get; set; }
         public DbSet<Slider> Sliders { get; set; }
@@ -17,8 +18,20 @@ namespace MCV_Mini_Project.Data
         public DbSet<CourseImage> CourseImages { get; set; }
         public DbSet<CourseInfo> CourseInfos { get; set; }
         public DbSet<Setting> Settings { get; set; }
-        public  DbSet<Video> Videos { get; set; }
+        public DbSet<Video> Videos { get; set; }
+
         public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            base.OnModelCreating(builder);
+
+            builder.Entity<AppUser>(entity =>
+            {
+                entity.Property(u => u.FullName)
+                    .IsRequired()
+                    .HasMaxLength(120);
+            });
+        }
     }
 }

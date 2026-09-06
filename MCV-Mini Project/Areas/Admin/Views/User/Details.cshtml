@@ -1,0 +1,33 @@
+@using MCV_Mini_Project.Areas.Admin.ViewModels.User
+@model UserDetailsVM
+@{
+    ViewData["Title"] = "User Details";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5>User Details</h5>
+                <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Back</a>
+            </div>
+            <div class="p-4">
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Full name</dt>
+                    <dd class="col-sm-8">@Model.FullName</dd>
+                    <dt class="col-sm-4">Email</dt>
+                    <dd class="col-sm-8">@Model.Email</dd>
+                    <dt class="col-sm-4">Confirmed</dt>
+                    <dd class="col-sm-8">@(Model.EmailConfirmed ? "Yes" : "No")</dd>
+                    <dt class="col-sm-4">Roles</dt>
+                    <dd class="col-sm-8">@string.Join(", ", Model.Roles)</dd>
+                    <dt class="col-sm-4">Created</dt>
+                    <dd class="col-sm-8">@Model.CreatedAt.ToLocalTime().ToString("g")</dd>
+                </dl>
+                <div class="mt-4">
+                    <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-orange">Edit</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,171 @@
+@model CourseInfoUIVM
+@{
+    var related = ViewBag.Related as IEnumerable<CourseInfoUIVM> ?? Enumerable.Empty<CourseInfoUIVM>();
+    var mainImage = FileHelper.GetImageUrl(Model.CourseImages?.FirstOrDefault(x => x.IsMain)?.Name
+                     ?? Model.CourseImages?.FirstOrDefault()?.Name);
+    var gallery = Model.CourseImages?
+        .Where(x => !x.IsMain)
+        .ToList() ?? new List<CourseImage>();
+}
+
+<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
+    <div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
+    <div class="search">
+        <form asp-controller="Courses" asp-action="Search" method="get" class="header_search_form menu_mm">
+            <input type="search" name="name" class="search_input menu_mm" placeholder="Search" required="required">
+            <button type="submit" class="header_search_button d-flex flex-column align-items-center justify-content-center menu_mm">
+                <i class="fa fa-search menu_mm" aria-hidden="true"></i>
+            </button>
+        </form>
+    </div>
+    <nav class="menu_nav">
+        <ul class="menu_mm">
+            <li class="menu_mm"><a asp-controller="Home" asp-action="Index">Home</a></li>
+            <li class="menu_mm"><a asp-controller="About" asp-action="Index">About us</a></li>
+            <li class="menu_mm"><a asp-controller="Courses" asp-action="Index">Courses</a></li>
+        </ul>
+    </nav>
+</div>
+
+@await Component.InvokeAsync("CoursePageHero", new { title = Model.Title, current = Model.Title })
+
+<div class="courses">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-10 offset-lg-1">
+                <div class="section_title text-center"><h2>@Model.Title</h2></div>
+                <div class="section_subtitle">@Model.Description</div>
+            </div>
+        </div>
+
+        <div class="row featured_row">
+            <div class="col-lg-6 featured_col">
+                <div class="featured_content">
+                    <div class="featured_header d-flex flex-row align-items-center justify-content-start">
+                        @if (Model.IsFeatured)
+                        {
+                            <div class="featured_tag"><a asp-controller="Courses" asp-action="Index">Featured</a></div>
+                        }
+                        else if (Model.IsNew)
+                        {
+                            <div class="featured_tag"><a asp-controller="Courses" asp-action="Index">New</a></div>
+                        }
+                        <div class="featured_price ml-auto">Price: <span>$@Model.Price</span></div>
+                    </div>
+
+                    <div class="featured_title">
+                        <h3>@Model.Title</h3>
+                    </div>
+
+                    <div class="featured_text">
+                        @Model.Description
+                    </div>
+
+                    <div class="featured_footer d-flex align-items-center justify-content-start">
+                        <div class="featured_author_image">
+                            <img src="@FileHelper.GetImageUrl(Model.Teacher?.Image)" alt="@Model.Teacher?.FullName">
+                        </div>
+                        <div class="featured_author_name">
+                            By @Model.Teacher?.FullName
+                            @if (!string.IsNullOrWhiteSpace(Model.Teacher?.Position?.Name))
+                            {
+                                <span> — @Model.Teacher.Position.Name</span>
+                            }
+                        </div>
+                        <div class="featured_sales ml-auto">
+                            <span>@Model.SalesCount</span> Sales
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <a asp-controller="Courses" asp-action="Index" class="course_button">
+                            <span>back to courses</span>
+                            <span class="button_arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6 featured_col">
+                <div class="featured_background" style="background-image:url('@mainImage')"></div>
+            </div>
+        </div>
+
+        @if (gallery.Any())
+        {
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="section_title text-center" style="margin-top:80px"><h2>Course gallery</h2></div>
+                </div>
+            </div>
+            <div class="row courses_row">
+                @foreach (var image in gallery)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course">
+                            <div class="course_image">
+                                <img src="@FileHelper.GetImageUrl(image.Name)" alt="@Model.Title">
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+
+        @if (related.Any())
+        {
+            <div class="row">
+                <div class="col-lg-10 offset-lg-1">
+                    <div class="section_title text-center" style="margin-top:80px"><h2>More courses</h2></div>
+                    <div class="section_subtitle">Choose another course and keep learning with eLearn.</div>
+                </div>
+            </div>
+            <div class="row courses_row">
+                @foreach (var item in related)
+                {
+                    var cardImage = FileHelper.GetImageUrl(item.CourseImages?.FirstOrDefault(x => x.IsMain)?.Name
+                                    ?? item.CourseImages?.FirstOrDefault()?.Name);
+                    <div class="col-lg-4 col-md-6">
+                        <div class="course">
+                            <div class="course_image">
+                                <a asp-controller="Courses" asp-action="Detail" asp-route-id="@item.Id" class="course-image-link">
+                                    <img src="@cardImage" alt="@item.Title">
+                                </a>
+                            </div>
+                            <div class="course_body">
+                                <div class="course_header d-flex flex-row align-items-center justify-content-start">
+                                    @if (item.IsFeatured)
+                                    {
+                                        <div class="course_tag"><a asp-controller="Courses" asp-action="Detail" asp-route-id="@item.Id">Featured</a></div>
+                                    }
+                                    else if (item.IsNew)
+                                    {
+                                        <div class="course_tag"><a asp-controller="Courses" asp-action="Detail" asp-route-id="@item.Id">New</a></div>
+                                    }
+                                    <div class="course_price ml-auto">Price: <span>$@item.Price</span></div>
+                                </div>
+                                <div class="course_title">
+                                    <h3>
+                                        <a asp-controller="Courses" asp-action="Detail" asp-route-id="@item.Id">@item.Title</a>
+                                    </h3>
+                                </div>
+                                <div class="course_text">
+                                    <a asp-controller="Courses" asp-action="Detail" asp-route-id="@item.Id" class="course-desc-link">
+                                        @item.Description
+                                    </a>
+                                </div>
+                                <div class="course_footer d-flex align-items-center justify-content-start">
+                                    <div class="course_author_image">
+                                        <img src="@FileHelper.GetImageUrl(item.Teacher?.Image)" alt="">
+                                    </div>
+                                    <div class="course_author_name">By @item.Teacher?.FullName</div>
+                                    <div class="course_sales ml-auto"><span>@item.SalesCount</span> Sales</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        }
+    </div>
+</div>

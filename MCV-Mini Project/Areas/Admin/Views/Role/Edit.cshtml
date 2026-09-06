@@ -1,0 +1,71 @@
+@using MCV_Mini_Project.Areas.Admin.ViewModels.Role
+@using MCV_Mini_Project.Constants
+@model RoleEditVM
+@{
+    ViewData["Title"] = "Edit Role";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5>Edit Role</h5>
+                <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Back</a>
+            </div>
+            <div class="p-4">
+                <form asp-action="Edit" method="post">
+                    @Html.AntiForgeryToken()
+                    <input type="hidden" asp-for="Id" />
+                    <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold"></label>
+                        <input asp-for="Name" class="form-control" readonly="@Model.IsSystemRole" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Permissions</label>
+                        @if (Model.IsSystemRole)
+                        {
+                            <p class="small text-muted">System role permissions are fixed.</p>
+                            @foreach (var permission in Model.SelectedPermissions)
+                            {
+                                <span class="badge bg-primary me-1">@permission</span>
+                            }
+                        }
+                        else
+                        {
+                            @foreach (var permission in Permissions.Catalog)
+                            {
+                                var locked = permission.Value is Permissions.ManageRoles or Permissions.ManageSuperAdmins;
+                                var selected = Model.SelectedPermissions.Contains(permission.Value);
+                                <div class="form-check">
+                                    @if (locked)
+                                    {
+                                        <input class="form-check-input" type="checkbox" value="@permission.Value" id="p-@permission.Value" disabled />
+                                    }
+                                    else if (selected)
+                                    {
+                                        <input class="form-check-input" type="checkbox" name="SelectedPermissions" value="@permission.Value" id="p-@permission.Value" checked />
+                                    }
+                                    else
+                                    {
+                                        <input class="form-check-input" type="checkbox" name="SelectedPermissions" value="@permission.Value" id="p-@permission.Value" />
+                                    }
+                                    <label class="form-check-label" for="p-@permission.Value">
+                                        @permission.Label
+                                        <span class="d-block small text-muted">@permission.Description</span>
+                                    </label>
+                                </div>
+                            }
+                        }
+                    </div>
+
+                    <button type="submit" class="btn btn-orange">Save</button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

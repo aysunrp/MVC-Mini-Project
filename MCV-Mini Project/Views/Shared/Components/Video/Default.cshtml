@@ -1,5 +1,5 @@
-﻿
-@model IEnumerable<VideoUIVM>
+﻿@model VideoUIVM
+
 <div class="video">
     <div class="container">
         <div class="row">
@@ -7,7 +7,20 @@
                 <div class="video_container_outer">
                     <div class="video_container">
 
-                        <video id="vid1" class="video-js vjs-default-skin" controls data-setup='{ "poster": "images/video.jpg", "techOrder": ["youtube"], "sources": [{ "type": "video/youtube", "src": "@(Model != null && Model != null ? Model : "")"}], "youtube": { "iv_load_policy": 1 } }'>
+                        <video id="vid1"
+                               class="video-js vjs-default-skin"
+                               controls
+                               data-setup='{
+                            "poster": "images/video.jpg",
+                            "techOrder": ["youtube"],
+                            "sources": [{
+                            "type": "video/youtube",
+                            "src": "@(Model != null ? Model.Name: "")"
+                            }],
+                            "youtube": {
+                            "iv_load_policy": 1
+                            }
+                            }'>
                         </video>
 
                     </div>

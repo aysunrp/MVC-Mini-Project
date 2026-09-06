@@ -1,13 +1,13 @@
 @model IEnumerable<EventListVM>
 @{
-    ViewData["Title"] = "Tədbirlər";
+    ViewData["Title"] = "Events";
 }
 
 <div class="admin-card">
     <div class="admin-card-header">
-        <h5><i class="bi bi-calendar-event me-2 text-warning"></i>Tədbirlər</h5>
+        <h5><i class="bi bi-calendar-event me-2 text-warning"></i>Events</h5>
         <a asp-action="Create" class="btn btn-sm btn-warning">
-            <i class="bi bi-plus-lg me-1"></i>Yeni Tədbir
+            <i class="bi bi-plus-lg me-1"></i>Add Event
         </a>
     </div>
     <div class="table-responsive">
@@ -15,10 +15,10 @@
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Tarix</th>
-                    <th>Başlıq</th>
-                    <th>Yer</th>
-                    <th class="text-end">Əməliyyat</th>
+                    <th>Date</th>
+                    <th>Title</th>
+                    <th>Location</th>
+                    <th class="text-end">Actions</th>
                 </tr>
             </thead>
             <tbody>
@@ -39,18 +39,18 @@
                         <td class="text-end">
                             <a asp-action="Details" asp-route-id="@item.Id"
                                class="btn btn-sm btn-outline-info me-1">
-                                <i class="bi bi-eye"></i>
+                                Detail
                             </a>
                             <a asp-action="Edit" asp-route-id="@item.Id"
                                class="btn btn-sm btn-outline-warning me-1">
-                                <i class="bi bi-pencil"></i>
+                                Edit
                             </a>
                             <form asp-action="Delete" asp-route-id="@item.Id"
                                   method="post" class="d-inline"
                                   onsubmit="return confirm('Bu tədbiri silmək istədiyinizə əminsiniz?')">
                                 @Html.AntiForgeryToken()
                                 <button type="submit" class="btn btn-sm btn-outline-danger">
-                                    <i class="bi bi-trash"></i>
+                                    Delete
                                 </button>
                             </form>
                         </td>

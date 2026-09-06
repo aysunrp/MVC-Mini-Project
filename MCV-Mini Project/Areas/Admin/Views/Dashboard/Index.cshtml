@@ -2,7 +2,7 @@
     ViewData["Title"] = "Dashboard";
 }
 
-<div class="row g-3 mb-4">
+<div class="row g-3">
     @{
         var stats = new[]
         {
@@ -11,7 +11,7 @@
             ("News",      "News",          "bi-newspaper",        "#fff8ec", "#ffae00"),
             ("Sliders",   "Slider",        "bi-images",           "#fff1ea", "#ffa07f"),
             ("Events",    "Event",         "bi-calendar-event",   "#f7f2ee", "#937c6f"),
-            ("Authors",   "Author",        "bi-person-lines-fill","#fef2f0", "#FF6347"),
+            ("Authors",  "Author",        "bi-person-lines-fill","#fef2f0", "#FF6347"),
             ("Positions", "Position",      "bi-briefcase",        "#f2f1f8", "#2c2b31"),
             ("Settings",  "Setting",       "bi-gear",             "#f4f3f8", "#44425a"),
         };
@@ -33,45 +33,4 @@
             </div>
         </div>
     }
-</div>
-
-<div class="ac">
-    <div class="ac-head">
-        <h5><i class="bi bi-grid-1x2 me-2" style="color:#ff8a00"></i>Quick Access</h5>
-    </div>
-    <div class="p-4">
-        <div class="row g-3">
-            @{
-                var links = new[]
-                {
-                    ("Sliders",   "Slider",        "bi-images",             "#ff8a00"),
-                    ("Icons",     "Icon",          "bi-emoji-smile",        "#ff6600"),
-                    ("Videos",    "Video",         "bi-play-circle",        "#ffae00"),
-                    ("Settings",  "Setting",       "bi-gear",               "#ffa07f"),
-                    ("Courses",   "CourseInfo",    "bi-book",               "#ff8a00"),
-                    ("Teachers",  "Teacher",       "bi-person-workspace",   "#ff6600"),
-                    ("Positions", "Position",      "bi-briefcase",          "#2c2b31"),
-                    ("News",      "News",          "bi-newspaper",          "#ffae00"),
-                    ("Events",    "Event",         "bi-calendar-event",     "#937c6f"),
-                    ("Authors",   "Author",        "bi-person-lines-fill",  "#FF6347"),
-                    ("Platform",  "AboutPlatform", "bi-building",           "#44425a"),
-                    ("Vision",    "AboutVision",   "bi-eye",                "#ff8a00"),
-                };
-            }
-            @foreach (var (label, controller, icon, color) in links)
-            {
-                <div class="col-6 col-sm-4 col-md-3 col-xl-2">
-                    <a asp-area="Admin" asp-controller="@controller" asp-action="Index"
-                       class="d-flex flex-column align-items-center justify-content-center gap-2
-                              rounded-3 p-3 text-decoration-none border border-2 qa-card"
-                       style="border-color:#e8e6f0 !important; transition: all .2s;"
-                       onmouseover="this.style.borderColor='@color';this.style.background='#fff4e8'"
-                       onmouseout="this.style.borderColor='#e8e6f0';this.style.background=''">
-                        <i class="bi @icon fs-3" style="color:@color"></i>
-                        <span class="small fw-semibold text-dark">@label</span>
-                    </a>
-                </div>
-            }
-        </div>
-    </div>
 </div>

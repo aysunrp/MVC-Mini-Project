@@ -1,0 +1,76 @@
+@model EmailConfirmationVM
+@{
+    ViewData["Title"] = "Email confirmation";
+}
+
+<div class="auth-page">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-5 col-md-7">
+                <div class="auth-card">
+                    @if (Model.Succeeded)
+                    {
+                        <div class="auth-icon success"><i class="fa fa-check"></i></div>
+                        <h2>Email confirmation</h2>
+                        <p class="auth-lead">@(Model.Message ?? "Your email has been confirmed. You can now sign in.")</p>
+                        @if (!string.IsNullOrWhiteSpace(Model.Email))
+                        {
+                            <p class="auth-email">@Model.Email</p>
+                        }
+                        <a asp-action="Login" class="auth-btn">Login</a>
+                    }
+                    else if (Model.Failed)
+                    {
+                        <div class="auth-icon error"><i class="fa fa-exclamation"></i></div>
+                        <h2>Email confirmation</h2>
+                        <p class="auth-lead">@(Model.Message ?? "This confirmation link is invalid, expired, or has already been used.")</p>
+                        <a asp-action="ResendConfirmation" asp-route-email="@Model.Email" class="auth-btn">Resend confirmation</a>
+                        <p class="auth-switch"><a asp-action="Login">Back to login</a></p>
+                    }
+                    else
+                    {
+                        <div class="auth-icon"><i class="fa fa-envelope-o"></i></div>
+                        <h2>Email confirmation</h2>
+                        <p class="auth-lead">
+                            Confirmation is sent to <strong>@(ViewBag.Inbox ?? "aysunrp@code.edu.az")</strong>.
+                            The link expires and can be used only once.
+                        </p>
+
+                        @if (!string.IsNullOrWhiteSpace(Model.Email))
+                        {
+                            <p class="auth-email">Registered: @Model.Email</p>
+                        }
+
+                        @if (Model.EmailSent)
+                        {
+                            <div class="alert alert-success">Confirmation email was sent to @(ViewBag.Inbox ?? "aysunrp@code.edu.az"). Check inbox and spam.</div>
+                        }
+                        else
+                        {
+                            <div class="alert alert-warning">
+                                SMTP password is missing, so the mail was not sent to @(ViewBag.Inbox ?? "aysunrp@code.edu.az").
+                                Put the mailbox password in <strong>SMTP_PASSWORD</strong> inside the .env file, restart the app, then resend.
+                                You can also confirm from this page.
+                            </div>
+                        }
+
+                        @if (!string.IsNullOrWhiteSpace(Model.ConfirmLink))
+                        {
+                            <a href="@Model.ConfirmLink" class="auth-btn">Confirm email</a>
+                        }
+                        else
+                        {
+                            <a asp-action="ResendConfirmation" asp-route-email="@Model.Email" class="auth-btn">Get a new link</a>
+                        }
+
+                        <p class="auth-switch">
+                            Didn't get the email?
+                            <a asp-action="ResendConfirmation" asp-route-email="@Model.Email">Resend confirmation</a>
+                        </p>
+                        <p class="auth-switch" style="margin-top:8px"><a asp-action="Login">Back to login</a></p>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

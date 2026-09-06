@@ -1,0 +1,74 @@
+@using MCV_Mini_Project.Areas.Admin.ViewModels.User
+@model IEnumerable<UserListVM>
+@{
+    ViewData["Title"] = "Users";
+}
+
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h5><i class="bi bi-people me-2" style="color:#ff8a00"></i>Users</h5>
+        <a asp-action="Create" class="btn btn-sm btn-orange">
+            <i class="bi bi-plus-lg me-1"></i>Add User
+        </a>
+    </div>
+    <div class="table-responsive">
+        <table class="table admin-table mb-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                    <th>Created</th>
+                    <th class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (!Model.Any())
+                {
+                    <tr><td colspan="6" class="text-center text-muted py-4">No users found.</td></tr>
+                }
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="fw-semibold">@item.FullName</td>
+                        <td>@item.Email</td>
+                        <td>
+                            @foreach (var role in item.Roles)
+                            {
+                                <span class="badge bg-primary me-1">@role</span>
+                            }
+                        </td>
+                        <td>
+                            @if (item.EmailConfirmed)
+                            {
+                                <span class="badge bg-success-subtle">Confirmed</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-warning text-dark">Unconfirmed</span>
+                            }
+                        </td>
+                        <td class="small text-muted">@item.CreatedAt.ToLocalTime().ToString("g")</td>
+                        <td class="text-end">
+                            <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info me-1">Detail</a>
+                            @if (item.CanManage)
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning me-1">Edit</a>
+                                <form asp-action="Delete" asp-route-id="@item.Id" method="post" class="d-inline"
+                                      onsubmit="return confirm('Delete this user?')">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </form>
+                            }
+                            else if (User.IsInRole("SuperAdmin"))
+                            {
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning me-1">Edit</a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

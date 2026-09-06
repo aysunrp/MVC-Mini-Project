@@ -1,10 +1,13 @@
 using MCV_Mini_Project.Areas.Admin.ViewModels.Setting;
 using MCV_Mini_Project.Services.Interface;
+using MCV_Mini_Project.Constants;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MCV_Mini_Project.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [Authorize(Policy = Policies.AdminPanel)]
     public class SettingController : Controller
     {
         private readonly ISettingService _settingService;

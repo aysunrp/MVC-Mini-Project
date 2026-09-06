@@ -1,0 +1,55 @@
+@using MCV_Mini_Project.Areas.Admin.ViewModels.Role
+@using MCV_Mini_Project.Constants
+@model RoleCreateVM
+@{
+    ViewData["Title"] = "Add Role";
+}
+
+<div class="row justify-content-center">
+    <div class="col-lg-6">
+        <div class="admin-card">
+            <div class="admin-card-header">
+                <h5>Add Role</h5>
+                <a asp-action="Index" class="btn btn-sm btn-outline-secondary">Back</a>
+            </div>
+            <div class="p-4">
+                <form asp-action="Create" method="post">
+                    @Html.AntiForgeryToken()
+                    <div asp-validation-summary="ModelOnly" class="text-danger small mb-3"></div>
+
+                    <div class="mb-3">
+                        <label asp-for="Name" class="form-label fw-semibold"></label>
+                        <input asp-for="Name" class="form-control" />
+                        <span asp-validation-for="Name" class="text-danger small"></span>
+                    </div>
+
+                    <div class="mb-4">
+                        <label class="form-label fw-semibold">Permissions</label>
+                            @foreach (var permission in Permissions.Catalog)
+                            {
+                                var locked = permission.Value is Permissions.ManageRoles or Permissions.ManageSuperAdmins;
+                                <div class="form-check">
+                                    @if (locked)
+                                    {
+                                        <input class="form-check-input" type="checkbox" value="@permission.Value" id="p-@permission.Value" disabled />
+                                    }
+                                    else
+                                    {
+                                        <input class="form-check-input" type="checkbox" name="SelectedPermissions" value="@permission.Value" id="p-@permission.Value" />
+                                    }
+                                    <label class="form-check-label" for="p-@permission.Value">
+                                        @permission.Label
+                                        <span class="d-block small text-muted">@permission.Description</span>
+                                    </label>
+                                </div>
+                            }
+                        <p class="small text-muted mt-2 mb-0">Role create/delete and SuperAdmin management stay SuperAdmin-only.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-orange">Create Role</button>
+                    <a asp-action="Index" class="btn btn-outline-secondary">Cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

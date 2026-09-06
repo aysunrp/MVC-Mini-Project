@@ -6,5 +6,6 @@ namespace MCV_Mini_Project.Services.Interface
     {
         Task<IEnumerable<CourseInfoUIVM>> GetAllAsync();
         Task<IEnumerable<CourseInfoUIVM>> SearchAsync(string name);
+        Task<CourseInfoUIVM?> GetByIdAsync(int id);
     }
 }

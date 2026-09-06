@@ -1,0 +1,59 @@
+@using MCV_Mini_Project.Areas.Admin.ViewModels.Role
+@using MCV_Mini_Project.Constants
+@model IEnumerable<RoleListVM>
+@{
+    ViewData["Title"] = "Roles";
+}
+
+<div class="admin-card">
+    <div class="admin-card-header">
+        <h5><i class="bi bi-shield-lock me-2" style="color:#ff8a00"></i>Roles</h5>
+        <a asp-action="Create" class="btn btn-sm btn-orange">
+            <i class="bi bi-plus-lg me-1"></i>Add Role
+        </a>
+    </div>
+    <div class="table-responsive">
+        <table class="table admin-table mb-0">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Users</th>
+                    <th>Permissions</th>
+                    <th class="text-end">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td class="fw-semibold">@item.Name</td>
+                        <td>
+                            @if (item.IsSystemRole)
+                            {
+                                <span class="badge bg-primary">System</span>
+                            }
+                            else
+                            {
+                                <span class="badge bg-success-subtle">Custom</span>
+                            }
+                        </td>
+                        <td>@item.UserCount</td>
+                        <td class="small">@string.Join(", ", item.Permissions)</td>
+                        <td class="text-end">
+                            <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-warning me-1">Edit</a>
+                            @if (!item.IsSystemRole)
+                            {
+                                <form asp-action="Delete" asp-route-id="@item.Id" method="post" class="d-inline"
+                                      onsubmit="return confirm('Delete this role?')">
+                                    @Html.AntiForgeryToken()
+                                    <button type="submit" class="btn btn-sm btn-outline-danger">Delete</button>
+                                </form>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -154,6 +154,7 @@
             border-bottom: 2px solid var(--orange); white-space: nowrap;
         }
         .at tbody tr:hover, .admin-table tbody tr:hover { background: var(--orange-tint); }
+        .at td.text-end, .admin-table td.text-end { white-space: nowrap; }
 
         /* ── Form ── */
         .form-label { color: var(--heading); }
@@ -241,6 +242,13 @@
         <div class="sb-section">About</div>
         <a class="sb-link @Active("AboutPlatform")" asp-area="Admin" asp-controller="AboutPlatform" asp-action="Index"><i class="bi bi-building"></i> Platform</a>
         <a class="sb-link @Active("AboutVision")"   asp-area="Admin" asp-controller="AboutVision"   asp-action="Index"><i class="bi bi-eye"></i> Vision</a>
+
+        <div class="sb-section">Administration</div>
+        <a class="sb-link @Active("User")" asp-area="Admin" asp-controller="User" asp-action="Index"><i class="bi bi-people"></i> Users</a>
+        @if (User.IsInRole("SuperAdmin"))
+        {
+            <a class="sb-link @Active("Role")" asp-area="Admin" asp-controller="Role" asp-action="Index"><i class="bi bi-shield-lock"></i> Roles</a>
+        }
     </div>
 </nav>
 
@@ -248,10 +256,19 @@
 <div id="main">
     <div id="topbar">
         <span class="page-title">@(ViewData["Title"] ?? "Admin Panel")</span>
-        <a asp-area="" asp-controller="Home" asp-action="Index"
-           class="btn btn-sm btn-site d-flex align-items-center gap-1">
-            <i class="bi bi-house"></i> Back to Site
-        </a>
+        <div class="d-flex align-items-center gap-2">
+            <span class="small fw-semibold" style="color:#44425a">
+                @(User.FindFirst(System.Security.Claims.ClaimTypes.GivenName)?.Value ?? User.Identity?.Name)
+            </span>
+            <form asp-area="" asp-controller="Account" asp-action="Logout" method="post" class="d-inline">
+                @Html.AntiForgeryToken()
+                <button type="submit" class="btn btn-sm btn-outline-secondary">Logout</button>
+            </form>
+            <a asp-area="" asp-controller="Home" asp-action="Index"
+               class="btn btn-sm btn-site d-flex align-items-center gap-1">
+                <i class="bi bi-house"></i> Back to Site
+            </a>
+        </div>
     </div>
 
     @if (TempData["Success"] != null)

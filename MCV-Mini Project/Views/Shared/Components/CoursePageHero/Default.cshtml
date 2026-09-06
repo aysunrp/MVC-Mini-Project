@@ -1,16 +1,26 @@
 ﻿<div class="home">
-
-    <div class="home_background parallax_background parallax-window" data-parallax="scroll" data-image-src="images/courses.jpg" data-speed="0.8"></div>
+    <div class="home_background parallax_background parallax-window"
+         data-parallax="scroll"
+         data-image-src="@Url.Content("~/images/courses.jpg")"
+         data-speed="0.8"></div>
     <div class="home_container">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <div class="home_content text-center">
-                        <div class="home_title">About us</div>
+                        <div class="home_title">@ViewBag.HeroTitle</div>
                         <div class="breadcrumbs">
                             <ul>
-                                <li><a href="index-2.html">Home</a></li>
-                                <li>About us</li>
+                                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                                @if (!string.IsNullOrWhiteSpace(ViewBag.HeroCurrent as string))
+                                {
+                                    <li><a asp-controller="Courses" asp-action="Index">Courses</a></li>
+                                    <li>@ViewBag.HeroCurrent</li>
+                                }
+                                else
+                                {
+                                    <li>Courses</li>
+                                }
                             </ul>
                         </div>
                     </div>
